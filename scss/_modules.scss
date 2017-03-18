@@ -1,19 +1,337 @@
-/*
+/* HEADER */
+header {
+  background-color: $header;
+  padding-bottom: 60px;
+}
 
-HEADER
+/*  top-bar  */
+.top-bar {
+  height: 42px;
+  background-color: $light-blue;
+  div {
+    display: flex;
+    height: 42px;
+    font-size: 1.0625em;
+    font-weight: 400;
+    line-height: 1.125;
+    justify-content: space-between;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: $white;
+  }
+}
+.logo {
+  height: 47px;
+  padding:  0 52px;
+  text-transform: uppercase;
+  font-family: Cuprum;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.0;
+  background-color: $red;
+  box-shadow: inset 0 -5px 0 $dark-red;
+}
 
-*/
+.to-payment {
+  background-color: $dark-green;
+  padding: 0 22px;
+  
+}
+.search {
+  position: relative;
+  background-color: $light-blue;
+  border: none;
+  color: $white;
+    &::before {
+    position: absolute;
+    top: 12px;
+    left: -76px;
+    content: "";
+    background: url(../img/icon-search.png);
+    width: 18px;
+    height: 18px;
+  }
+}
+::-webkit-input-placeholder {
+opacity : 1.0;
+}
 
-// main-navigation
+.bookmark::before {
+  position: absolute;
+  top: 12px;
+  left: -26px;
+  content: "";
+  background: url(../img/icon-bookmark.png);
+  width: 15px;
+  height: 15px;
+  
+}
+.cart::before {
+  position: absolute;
+  top: 12px;
+  left: -26px;
+  content: "";
+  background: url(../img/icon-basket.png);
+  width: 15px;
+  height: 15px;
+}
+
+/*   header-info  */
+
+.header-info {
+  display: flex;
+  height: 55px;
+  padding: 45px 0 40px 50px;
+}
+.slogan {
+  margin-right: 70px; 
+  color: $red;
+  font-style: italic;
+}
+.main-contact {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 70px;
+    a {
+      height: 45px;
+      padding: 10px 50px 10px 70px;
+      border: 3px solid #ffffff;
+      border-radius: 5px;
+      position: relative;
+      text-decoration: none;
+      font-size: 1.3125em;
+      color: $red;
+      &::before {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 19px;
+        height: 19px;
+        content: '';
+        background: url(../img/icon-phone.png);
+        
+      }
+    }
+}
+
+address {
+  color: $light-blue;
+  font-size: 0.875em;
+}
+.user-block {
+  display: flex;
+     a {
+      position: relative;
+      height: 45px;
+      background-color: $white;
+      color: $black;
+      font-size: 1.3125em;
+      text-decoration: none;
+      padding: 12px 26px 17px 48px;
+      &:last-child {
+        padding: 12px 25px 17px 25px;
+        margin-left: 5px;
+      }
+      &:not(:last-child)::before{
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        width: 20px;
+        height: 17px;
+        content: '';
+        background: url(../img/icon-login.png);
+      }
+    }
+}
+
+/* main-navigation */
 
 .main-nav {
-      a {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    margin-top: 40px;
+    background-color: $light-blue;
+    box-shadow: inset 0 -5px 0 $dark-blue;
+    a {
         display: block;
+        text-decoration: none;
         color: $white;
-        font-family: Cuprum;
-        font-size: 17px;
+        font-family: $prim-font;
+        font-size: 1.0625em;
         font-weight: 400;
-        line-height: 17px;
+        line-height: 1.0625em;
+        padding: 1.375em;
       }
+}
+main {
+  padding-top: 60px;
+}
+/* promo */
+.wrapx {
+  display: flex;
+  flex-direction: column;
+  div {
+    margin-right: 0;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  height: 415px;
+  margin-bottom: 52px;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 123px;
+    h3 {
+      margin: 0;
+    }
+  }
+  &-item:nth-child(3) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  &-slider {
+    width: 620px;
+    height: 266px;
+    background-color: $violet;
+    margin-right: 20px;
+  }
+  .btn {
+    background-color: rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+  }
+}
 
+
+.materials, .dely {
+  background-color: $gold;
+}
+.instruments {
+  background-color: $sky;
+}
+.tech {
+  background-color: $violet;
+}
+.sales {
+  background-color: $green;
+}
+
+.pop-goods,
+.pop-prod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $coral;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.875em;
+  }
+  a {
+    background-color: $red;
+  }
+}
+.pop-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  article {
+    width: 220px;
+    height: 318px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $grey;
+    font-family: "PT Sans";
+    h3 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 157px;
+      color: $black;
+      font-size: 1.125em;
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    b {
+      margin-top: 18px; 
+      margin-bottom: 13px;
+      color: $dark-grey;
+      font-size: 1.0625em;
+      font-weight: 700;
+      text-decoration: line-through;
+      text-transform: uppercase;
+    }
+    .new-price {
+      color: $white;
+      background-color: $red;
+      text-decoration: none;
+      padding: 11px 18px 11px 34px;
+      border-radius: 5px;
+    }
+    
+  }
+} 
+.wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+.prod-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  article {
+    width: 220px;
+    height: 145px;
+    border: 1px solid $grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $light-blue;
+}
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  font-size: 1.125em;
+  font-weight: 400;
+
+}
+.secondary-footer {
+  background-color: $dark-blue;
 }
