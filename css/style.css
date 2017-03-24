@@ -447,23 +447,23 @@ textarea {
 /*
   VARIABLES
 */
-/* line 25, ../scss/_base.scss */
+/* line 30, ../scss/_base.scss */
 html {
   box-sizing: border-box;
   font-family: Cuprum, Arial, sans-serif;
 }
 
-/* line 29, ../scss/_base.scss */
+/* line 34, ../scss/_base.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 33, ../scss/_base.scss */
+/* line 38, ../scss/_base.scss */
 body {
   font-size: 16px;
 }
 
-/* line 37, ../scss/_base.scss */
+/* line 42, ../scss/_base.scss */
 h3 {
   font-family: Cuprum, Arial, sans-serif;
   font-size: 1.5em;
@@ -472,7 +472,7 @@ h3 {
 }
 
 /* buttons */
-/* line 46, ../scss/_base.scss */
+/* line 51, ../scss/_base.scss */
 .btn {
   display: flex;
   justify-content: center;
@@ -488,32 +488,32 @@ h3 {
   line-height: 1.28571;
 }
 
-/* line 60, ../scss/_base.scss */
+/* line 65, ../scss/_base.scss */
 .btn-135 {
   width: 135px;
 }
 
-/* line 63, ../scss/_base.scss */
+/* line 68, ../scss/_base.scss */
 .btn-140 {
   width: 140px;
 }
 
-/* line 66, ../scss/_base.scss */
+/* line 71, ../scss/_base.scss */
 .btn-195 {
   width: 195px;
 }
 
-/* line 69, ../scss/_base.scss */
+/* line 74, ../scss/_base.scss */
 .btn-220 {
   width: 220px;
 }
 
-/* line 72, ../scss/_base.scss */
+/* line 77, ../scss/_base.scss */
 .btn-253 {
   width: 253px;
 }
 
-/* line 75, ../scss/_base.scss */
+/* line 80, ../scss/_base.scss */
 .btn-300 {
   width: 300px;
 }
@@ -581,28 +581,28 @@ header {
   background-color: #32425c;
   border: none;
   color: #fff;
-}
-/* line 50, ../scss/_modules.scss */
-.search::before {
-  position: absolute;
-  top: 12px;
-  left: -76px;
-  content: "";
-  background: url(../img/icon-search.png);
-  width: 18px;
-  height: 18px;
+  width: 230px;
+  background: url(../img/icon-search.png) no-repeat 20px;
+  padding-left: 60px;
 }
 
-/* line 60, ../scss/_modules.scss */
+/* line 55, ../scss/_modules.scss */
 ::-webkit-input-placeholder {
   opacity: 1.0;
 }
 
-/* line 64, ../scss/_modules.scss */
+/* line 58, ../scss/_modules.scss */
+.bookmark,
+.cart {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+/* line 63, ../scss/_modules.scss */
 .bookmark::before {
   position: absolute;
   top: 12px;
-  left: -26px;
+  left: 4px;
   content: "";
   background: url(../img/icon-bookmark.png);
   width: 15px;
@@ -613,7 +613,7 @@ header {
 .cart::before {
   position: absolute;
   top: 12px;
-  left: -26px;
+  left: 0px;
   content: "";
   background: url(../img/icon-basket.png);
   width: 15px;
@@ -624,24 +624,23 @@ header {
 /* line 86, ../scss/_modules.scss */
 .header-info {
   display: flex;
+  justify-content: space-between;
   height: 55px;
   padding: 45px 0 40px 50px;
 }
 
-/* line 91, ../scss/_modules.scss */
+/* line 93, ../scss/_modules.scss */
 .slogan {
-  margin-right: 70px;
   color: #ee3643;
   font-style: italic;
 }
 
-/* line 96, ../scss/_modules.scss */
+/* line 97, ../scss/_modules.scss */
 .main-contact {
   width: 270px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-right: 70px;
 }
 /* line 102, ../scss/_modules.scss */
 .main-contact a {
@@ -667,15 +666,16 @@ header {
 
 /* line 124, ../scss/_modules.scss */
 address {
+  margin-top: 10px;
   color: #32425c;
   font-size: 0.875em;
 }
 
-/* line 128, ../scss/_modules.scss */
+/* line 129, ../scss/_modules.scss */
 .user-block {
   display: flex;
 }
-/* line 130, ../scss/_modules.scss */
+/* line 131, ../scss/_modules.scss */
 .user-block a {
   position: relative;
   height: 45px;
@@ -685,12 +685,12 @@ address {
   text-decoration: none;
   padding: 12px 26px 17px 48px;
 }
-/* line 138, ../scss/_modules.scss */
+/* line 139, ../scss/_modules.scss */
 .user-block a:last-child {
   padding: 12px 25px 17px 25px;
   margin-left: 5px;
 }
-/* line 142, ../scss/_modules.scss */
+/* line 143, ../scss/_modules.scss */
 .user-block a:not(:last-child)::before {
   position: absolute;
   top: 15px;
@@ -701,17 +701,68 @@ address {
   background: url(../img/icon-login.png);
 }
 
+/* line 155, ../scss/_modules.scss */
+.user-profile {
+  width: 300px;
+}
+/* line 157, ../scss/_modules.scss */
+.user-profile section:first-child {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 13px 10px 14px 13px;
+  height: 45px;
+  background-color: #fff;
+}
+/* line 164, ../scss/_modules.scss */
+.user-profile section:first-child .user-name {
+  font-size: 1.3125em;
+  color: #000;
+  text-decoration: none;
+}
+/* line 169, ../scss/_modules.scss */
+.user-profile section:first-child .profile {
+  position: absolute;
+  content: '';
+  top: 16px;
+  left: 13px;
+  width: 20px;
+  height: 18px;
+  background: url("../img/icon-user.png") no-repeat 100%;
+}
+/* line 178, ../scss/_modules.scss */
+.user-profile section:first-child .logout {
+  top: 16px;
+  right: 10px;
+  position: absolute;
+  content: '';
+  width: 21px;
+  height: 17px;
+  background: url("../img/icon-logout.png") no-repeat 100%;
+}
+/* line 188, ../scss/_modules.scss */
+.user-profile section:last-child {
+  color: #32425c;
+  font-size: 1em;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+/* line 194, ../scss/_modules.scss */
+.user-profile section:last-child a {
+  color: #32425c;
+}
+
 /* main-navigation */
-/* line 156, ../scss/_modules.scss */
+/* line 202, ../scss/_modules.scss */
 .main-nav {
   display: flex;
   justify-content: space-around;
   height: 60px;
-  margin-top: 40px;
+  margin-top: 80px;
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 #293449;
 }
-/* line 163, ../scss/_modules.scss */
+/* line 209, ../scss/_modules.scss */
 .main-nav a {
   display: block;
   text-decoration: none;
@@ -723,35 +774,35 @@ address {
   padding: 1.375em;
 }
 
-/* line 174, ../scss/_modules.scss */
+/* line 220, ../scss/_modules.scss */
 main {
   padding-top: 60px;
 }
 
 /* promo */
-/* line 178, ../scss/_modules.scss */
+/* line 224, ../scss/_modules.scss */
 .wrapx {
   display: flex;
   flex-direction: column;
 }
-/* line 181, ../scss/_modules.scss */
+/* line 227, ../scss/_modules.scss */
 .wrapx div {
   margin-right: 0;
   margin-bottom: 20px;
 }
-/* line 184, ../scss/_modules.scss */
+/* line 230, ../scss/_modules.scss */
 .wrapx div:last-child {
   margin-bottom: 0;
 }
 
-/* line 189, ../scss/_modules.scss */
+/* line 235, ../scss/_modules.scss */
 .promo {
   display: flex;
   flex-wrap: wrap;
   height: 415px;
   margin-bottom: 52px;
 }
-/* line 194, ../scss/_modules.scss */
+/* line 240, ../scss/_modules.scss */
 .promo-item {
   display: flex;
   flex-direction: column;
@@ -765,34 +816,34 @@ main {
   width: 300px;
   height: 123px;
 }
-/* line 206, ../scss/_modules.scss */
+/* line 252, ../scss/_modules.scss */
 .promo-item h3 {
   margin: 0;
 }
-/* line 210, ../scss/_modules.scss */
+/* line 256, ../scss/_modules.scss */
 .promo-item:nth-child(3) {
   margin-right: 0;
   margin-bottom: 0;
 }
-/* line 214, ../scss/_modules.scss */
+/* line 260, ../scss/_modules.scss */
 .promo-slider {
   position: relative;
   width: 620px;
   height: 266px;
   margin-right: 20px;
 }
-/* line 219, ../scss/_modules.scss */
+/* line 265, ../scss/_modules.scss */
 .promo-slider input[type=radio] {
   position: absolute;
   opacity: 0;
 }
-/* line 224, ../scss/_modules.scss */
+/* line 270, ../scss/_modules.scss */
 .promo .btn {
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
 }
-/* line 229, ../scss/_modules.scss */
+/* line 275, ../scss/_modules.scss */
 .promo .learn-more {
   position: absolute;
   left: 25px;
@@ -801,7 +852,7 @@ main {
 }
 
 /*////////////slider //////////////*/
-/* line 239, ../scss/_modules.scss */
+/* line 286, ../scss/_modules.scss */
 .switch {
   position: absolute;
   display: flex;
@@ -810,7 +861,7 @@ main {
   width: 48px;
   height: 10px;
 }
-/* line 246, ../scss/_modules.scss */
+/* line 293, ../scss/_modules.scss */
 .switch label {
   width: 4px;
   height: 4px;
@@ -822,7 +873,7 @@ main {
   box-sizing: content-box;
 }
 
-/* line 257, ../scss/_modules.scss */
+/* line 304, ../scss/_modules.scss */
 .switch-2 {
   width: 575px;
   position: absolute;
@@ -832,7 +883,7 @@ main {
   left: 25px;
   height: 42px;
 }
-/* line 265, ../scss/_modules.scss */
+/* line 312, ../scss/_modules.scss */
 .switch-2 label {
   width: 22px;
   height: 40px;
@@ -840,18 +891,18 @@ main {
   box-sizing: content-box;
   background: url("../img/arrow-left.png") no-repeat 100%;
 }
-/* line 271, ../scss/_modules.scss */
+/* line 318, ../scss/_modules.scss */
 .switch-2 label:last-child {
   background: url("../img/arrow-right.png") no-repeat 100%;
 }
 
-/* line 278, ../scss/_modules.scss */
+/* line 325, ../scss/_modules.scss */
 #slide-1:checked ~ .switch label[for="slide-1"],
 #slide-2:checked ~ .switch label[for="slide-2"] {
   background: #ee3643;
 }
 
-/* line 283, ../scss/_modules.scss */
+/* line 330, ../scss/_modules.scss */
 .slide {
   min-height: 100%;
   overflow: hidden;
@@ -859,72 +910,72 @@ main {
   padding: 27px 20px 22px 24px;
 }
 
-/* line 289, ../scss/_modules.scss */
+/* line 336, ../scss/_modules.scss */
 .slides {
   height: 100%;
   width: 100%;
 }
 
-/* line 294, ../scss/_modules.scss */
+/* line 341, ../scss/_modules.scss */
 #slide-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
 
-/* line 298, ../scss/_modules.scss */
+/* line 345, ../scss/_modules.scss */
 #slide-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
 
-/* line 303, ../scss/_modules.scss */
+/* line 350, ../scss/_modules.scss */
 .text-wrapper {
   width: 240px;
   color: #fff;
 }
-/* line 307, ../scss/_modules.scss */
+/* line 354, ../scss/_modules.scss */
 .text-wrapper h2 {
   text-transform: uppercase;
   font-size: 2.25em;
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 313, ../scss/_modules.scss */
+/* line 360, ../scss/_modules.scss */
 .text-wrapper p {
   font-size: 1.125em;
   margin-top: 0;
 }
 
-/* line 319, ../scss/_modules.scss */
+/* line 366, ../scss/_modules.scss */
 .slide:nth-child(1) {
   background: url("../img/slider-wall-1.png") no-repeat 100%;
 }
 
-/* line 323, ../scss/_modules.scss */
+/* line 370, ../scss/_modules.scss */
 .slide:nth-child(2) {
   background: url("../img/slider-wall-2.png") no-repeat 100%;
 }
 
 /*////////////slider //////////////*/
-/* line 329, ../scss/_modules.scss */
+/* line 376, ../scss/_modules.scss */
 .materials, .dely {
   background-color: #f6b22d;
 }
 
-/* line 332, ../scss/_modules.scss */
+/* line 379, ../scss/_modules.scss */
 .instruments {
   background-color: #4aafde;
 }
 
-/* line 335, ../scss/_modules.scss */
+/* line 382, ../scss/_modules.scss */
 .tech {
   background-color: #cc79d1;
 }
 
-/* line 338, ../scss/_modules.scss */
+/* line 385, ../scss/_modules.scss */
 .sales {
   background-color: #85d179;
 }
 
-/* line 342, ../scss/_modules.scss */
+/* line 389, ../scss/_modules.scss */
 .pop-goods,
 .pop-prod {
   display: flex;
@@ -934,26 +985,26 @@ main {
   margin-bottom: 20px;
   padding: 0 25px;
 }
-/* line 350, ../scss/_modules.scss */
+/* line 397, ../scss/_modules.scss */
 .pop-goods h2,
 .pop-prod h2 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.875em;
 }
-/* line 355, ../scss/_modules.scss */
+/* line 402, ../scss/_modules.scss */
 .pop-goods a,
 .pop-prod a {
   background-color: #ee3643;
 }
 
-/* line 359, ../scss/_modules.scss */
+/* line 406, ../scss/_modules.scss */
 .pop-wrap {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-/* line 363, ../scss/_modules.scss */
+/* line 410, ../scss/_modules.scss */
 .pop-wrap article {
   width: 220px;
   height: 318px;
@@ -963,7 +1014,7 @@ main {
   border: 1px solid #e5e5e5;
   font-family: "PT Sans";
 }
-/* line 371, ../scss/_modules.scss */
+/* line 418, ../scss/_modules.scss */
 .pop-wrap article h3 {
   display: flex;
   align-items: center;
@@ -976,7 +1027,7 @@ main {
   margin: 0;
   margin-bottom: 5px;
 }
-/* line 383, ../scss/_modules.scss */
+/* line 430, ../scss/_modules.scss */
 .pop-wrap article b {
   margin-top: 18px;
   margin-bottom: 13px;
@@ -986,7 +1037,7 @@ main {
   text-decoration: line-through;
   text-transform: uppercase;
 }
-/* line 392, ../scss/_modules.scss */
+/* line 439, ../scss/_modules.scss */
 .pop-wrap article .new-price {
   color: #fff;
   background-color: #ee3643;
@@ -995,7 +1046,7 @@ main {
   border-radius: 5px;
 }
 
-/* line 402, ../scss/_modules.scss */
+/* line 449, ../scss/_modules.scss */
 .wrap {
   display: flex;
   align-items: center;
@@ -1003,14 +1054,14 @@ main {
   justify-content: flex-start;
 }
 
-/* line 408, ../scss/_modules.scss */
+/* line 455, ../scss/_modules.scss */
 .prod-wrap {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 65px;
 }
-/* line 413, ../scss/_modules.scss */
+/* line 460, ../scss/_modules.scss */
 .prod-wrap article {
   width: 220px;
   height: 145px;
@@ -1021,53 +1072,40 @@ main {
   margin-bottom: 20px;
 }
 
-/* line 424, ../scss/_modules.scss */
+/* line 471, ../scss/_modules.scss */
 .services-bg {
   background-color: #f3f7f9;
 }
-/* line 426, ../scss/_modules.scss */
+/* line 473, ../scss/_modules.scss */
 .services-bg .services {
   padding-top: 68px;
   padding-bottom: 102px;
 }
-/* line 429, ../scss/_modules.scss */
+/* line 476, ../scss/_modules.scss */
 .services-bg .services-header {
   width: 400px;
 }
-/* line 431, ../scss/_modules.scss */
+/* line 478, ../scss/_modules.scss */
 .services-bg .services-header h2 {
   font-size: 1.875em;
   margin-top: 0;
   margin-bottom: 30px;
 }
-/* line 437, ../scss/_modules.scss */
+/* line 484, ../scss/_modules.scss */
 .services-bg .services-header p {
   font-family: "PT Sans";
   font-size: 0.8125em;
   margin: 0;
 }
 
-/* line 447, ../scss/_modules.scss */
-.user-profile section:first-child {
-  width: 300px;
-  height: 45px;
-  padding: 14px 70px 11px 46px;
-  background-color: #fff;
-}
-/* line 452, ../scss/_modules.scss */
-.user-profile section:first-child .user-name {
-  font-size: 1.3125em;
-  color: #000;
-}
-
-/* line 460, ../scss/_modules.scss */
+/* line 494, ../scss/_modules.scss */
 footer {
   display: flex;
   justify-content: space-between;
   background-color: #32425c;
 }
 
-/* line 465, ../scss/_modules.scss */
+/* line 499, ../scss/_modules.scss */
 .bottom-nav {
   display: flex;
   justify-content: space-between;
@@ -1076,20 +1114,122 @@ footer {
   font-weight: 400;
 }
 
-/* line 473, ../scss/_modules.scss */
+/* line 507, ../scss/_modules.scss */
 .secondary-footer {
   background-color: #293449;
 }
 
-/* main-navigation */
-/* line 2, ../scss/_state.scss */
-.main-nav a:hover {
+/* top bar*/
+/* line 4, ../scss/_state.scss */
+.logo:hover {
+  background-color: #cb2834;
+}
+
+/* line 7, ../scss/_state.scss */
+.search:hover {
+  background: #293449 url(../img/icon-search-hover.png) no-repeat 20px;
+}
+
+/* line 10, ../scss/_state.scss */
+.bookmark:hover,
+.cart:hover {
   background-color: #293449;
 }
 
-/* line 6, ../scss/_state.scss */
+/* line 14, ../scss/_state.scss */
+.bookmark:hover::before {
+  background: url(../img/icon-bookmark-hover.png);
+}
+
+/* line 17, ../scss/_state.scss */
+.to-payment:hover {
+  background-color: #5fbb2d;
+}
+
+/* line 21, ../scss/_state.scss */
+.logo:active {
+  background-color: #cb2834;
+}
+
+/* line 24, ../scss/_state.scss */
+.search:focus {
+  color: #000;
+  background: #fff url(../img/icon-search-focus.png) no-repeat 20px;
+}
+
+/* line 28, ../scss/_state.scss */
+.bookmark:active,
+.cart:active,
+.to-payment:active {
+  color: #8b8e94;
+}
+
+/* line 33, ../scss/_state.scss */
+.bookmark:active,
+.cart:active {
+  background-color: #161d29;
+}
+
+/* line 43, ../scss/_state.scss */
+.user-block {
+  display: flex;
+}
+/* line 45, ../scss/_state.scss */
+.user-block a:hover {
+  color: #ee3643;
+}
+/* line 47, ../scss/_state.scss */
+.user-block a:hover:not(:last-child):hover::before {
+  background: url(../img/icon-login-hover.png);
+}
+
+/* line 53, ../scss/_state.scss */
+.user-block {
+  display: flex;
+}
+/* line 55, ../scss/_state.scss */
+.user-block a:active {
+  color: #e5e5e5;
+}
+/* line 57, ../scss/_state.scss */
+.user-block a:active:not(:last-child):active::before {
+  background: url(../img/icon-login.png);
+}
+
+/* line 69, ../scss/_state.scss */
+.user-profile section:first-child .profile:hover {
+  background: url("../img/icon-user-hover.png") no-repeat 100%;
+}
+/* line 72, ../scss/_state.scss */
+.user-profile section:first-child .logout:hover {
+  background: url("../img/icon-logout-hover.png") no-repeat 100%;
+}
+/* line 77, ../scss/_state.scss */
+.user-profile section:last-child a:hover {
+  color: #ee3643;
+}
+
+/* line 85, ../scss/_state.scss */
+.user-profile section:first-child .profile:active {
+  background: url("../img/icon-user.png") no-repeat 100%;
+}
+/* line 88, ../scss/_state.scss */
+.user-profile section:first-child .logout:active {
+  background: url("../img/icon-logout.png") no-repeat 100%;
+}
+/* line 93, ../scss/_state.scss */
+.user-profile section:last-child a:active {
+  color: #8b8e94;
+}
+
+/* main-navigation */
+/* line 103, ../scss/_state.scss */
+.main-nav a:hover {
+  background-color: #293449;
+}
+/* line 106, ../scss/_state.scss */
 .main-nav a:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: #8b8e94;
 }
 
 /*# sourceMappingURL=style.css.map */

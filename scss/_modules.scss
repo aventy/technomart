@@ -15,7 +15,7 @@ header {
     font-weight: 400;
     line-height: 1.125;
     justify-content: space-between;
-  }
+    }
   a {
     display: flex;
     justify-content: center;
@@ -47,34 +47,34 @@ header {
   background-color: $light-blue;
   border: none;
   color: $white;
-    &::before {
-    position: absolute;
-    top: 12px;
-    left: -76px;
-    content: "";
-    background: url(../img/icon-search.png);
-    width: 18px;
-    height: 18px;
-  }
+  width: 230px;
+  background: url(../img/icon-search.png) no-repeat 20px;
+  padding-left: 60px;
 }
+
 ::-webkit-input-placeholder {
 opacity : 1.0;
 }
-
+.bookmark,
+.cart {
+  padding-left: 35px;
+  padding-right: 35px;
+}
 .bookmark::before {
   position: absolute;
   top: 12px;
-  left: -26px;
+  left: 4px;
   content: "";
   background: url(../img/icon-bookmark.png);
   width: 15px;
   height: 15px;
   
 }
+ 
 .cart::before {
   position: absolute;
   top: 12px;
-  left: -26px;
+  left: 0px;
   content: "";
   background: url(../img/icon-basket.png);
   width: 15px;
@@ -85,11 +85,12 @@ opacity : 1.0;
 
 .header-info {
   display: flex;
+  justify-content: space-between;
   height: 55px;
   padding: 45px 0 40px 50px;
+  
 }
 .slogan {
-  margin-right: 70px; 
   color: $red;
   font-style: italic;
 }
@@ -98,7 +99,6 @@ opacity : 1.0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-right: 70px;
     a {
       height: 45px;
       padding: 10px 50px 10px 70px;
@@ -122,6 +122,7 @@ opacity : 1.0;
 }
 
 address {
+  margin-top: 10px;
   color: $light-blue;
   font-size: 0.875em;
 }
@@ -151,13 +152,58 @@ address {
     }
 }
 
+.user-profile {
+  width: 300px;
+    section:first-child {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding: 13px 10px 14px 13px;
+      height: 45px;
+      background-color: $white;
+        .user-name {
+          font-size: 1.3125em;
+          color: $black;
+          text-decoration: none;
+        }
+        .profile {
+          position: absolute;
+          content: '';
+          top: 16px;
+          left: 13px;      
+          width: 20px;
+          height: 18px;
+          background: url('../img/icon-user.png') no-repeat 100%;
+        }
+        .logout {
+          top: 16px;
+          right: 10px;  
+          position: absolute;
+          content: '';
+          width: 21px;
+          height: 17px;
+          background: url('../img/icon-logout.png') no-repeat 100%;
+        }
+    }
+    section:last-child {
+
+      color: $light-blue;
+      font-size: 1em;
+      padding-left: 20px;
+      padding-top: 10px;
+      a {
+        color: $light-blue;
+      }
+    }
+}
+
 /* main-navigation */
 
 .main-nav {
     display: flex;
     justify-content: space-around;
     height: 60px;
-    margin-top: 40px;
+    margin-top: 80px;
     background-color: $light-blue;
     box-shadow: inset 0 -5px 0 $dark-blue;
     a {
@@ -233,6 +279,7 @@ main {
     background-color: $red;
   }
 }
+
 
 /*////////////slider //////////////*/
 
@@ -441,26 +488,6 @@ main {
       }
     }
   }
-}
-
-.user-profile {
-    section:first-child {
-      position: relative;
-      width: 300px;
-      height: 45px;
-      padding: 14px 70px 11px 46px;
-      background-color: $white;
-      .user-name {
-        font-size: 1.3125em;
-        color: $black;
-      }
-      .logout {
-        position: absolute;
-        width: 21px;
-        height: 17px;
-        background: url('../img/icon-logout.png') no-repeat 100%;
-      }
-    }
 }
 
 

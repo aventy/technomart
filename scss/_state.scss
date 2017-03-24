@@ -1,8 +1,109 @@
-/* main-navigation */
-.main-nav a:hover {
-	background-color: $dark-blue;
+/* top bar*/
+
+// hover
+.logo:hover {
+  background-color: $red-hover;
+}
+.search:hover {
+  background: $dark-blue url(../img/icon-search-hover.png) no-repeat 20px;
+}
+.bookmark:hover,
+.cart:hover {
+  background-color: $dark-blue;
+}
+.bookmark:hover::before {
+  background: url(../img/icon-bookmark-hover.png);
+}
+.to-payment:hover {
+  background-color: $light-green;
+}
+//active
+.logo:active {
+  background-color: $red-hover;
+}
+.search:focus {
+  color: $black;
+  background: $white url(../img/icon-search-focus.png) no-repeat 20px;
+}
+.bookmark:active,
+.cart:active,
+.to-payment:active {
+  color: $light-grey;
+}
+.bookmark:active,
+.cart:active {
+  background-color: $dark-dark-blue;
 }
 
-.main-nav a:active {
-	color: rgba(255,255,255,0.5);
+
+// user - block 
+
+//hover
+
+.user-block {
+  display: flex;
+    a:hover {
+      color: $red;
+    &:not(:last-child):hover::before {
+      background: url(../img/icon-login-hover.png);
+    }
+   }
+}
+//active 
+.user-block {
+  display: flex;
+    a:active {
+      color: $grey;
+    &:not(:last-child):active::before {
+      background: url(../img/icon-login.png);
+    }
+    }
+}
+
+//user-profile 
+
+// hover 
+
+.user-profile {
+    section:first-child {
+        .profile:hover {
+          background: url('../img/icon-user-hover.png') no-repeat 100%;
+        }
+        .logout:hover {
+          background: url('../img/icon-logout-hover.png') no-repeat 100%;
+        }
+    }
+    section:last-child {
+      a:hover {
+        color: $red;
+        }
+    }
+}
+//active 
+.user-profile {
+    section:first-child {
+        .profile:active {
+          background: url('../img/icon-user.png') no-repeat 100%;
+        }
+        .logout:active {
+          background: url('../img/icon-logout.png') no-repeat 100%;
+        }
+    }
+    section:last-child {
+      a:active {
+        color: $light-grey;
+        }
+    }
+}
+
+
+
+/* main-navigation */
+.main-nav a{
+  &:hover {
+    background-color: $dark-blue;
+  }
+  &:active {
+  color: $light-grey;
+  }
 }
