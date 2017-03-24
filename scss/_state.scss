@@ -107,3 +107,51 @@
   color: $light-grey;
   }
 }
+
+
+
+/*    FOOTER   */
+
+//hover 
+
+.bottom-nav a:hover,
+.catalog a:hover {
+  text-decoration: underline;
+}
+
+//active 
+
+.bottom-nav a:active,
+.catalog a:active {
+  text-decoration: none;
+  color: rgba($light-grey, 0.5)
+}
+
+// social 
+
+
+.icon-vk:hover,
+.icon-vk:active {
+  background: $malina url(../img/icon-vk.png) no-repeat center;
+}
+.icon-facebook:hover,
+.icon-facebook:active {
+  background: $malina url(../img/icon-facebook.png) no-repeat center;
+}
+.icon-instagramm:hover,
+.icon-instagramm:active {
+  background: $malina url(../img/icon-instagramm.png) no-repeat center;
+}
+
+// contact
+
+.mail-contact a:hover,
+.author a:hover {
+  text-decoration: underline;
+}
+
+.mail-contact a:active,
+.author a:active {
+  text-decoration: none;
+  color: $red;
+}

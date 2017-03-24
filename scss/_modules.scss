@@ -491,19 +491,120 @@ main {
 }
 
 
+
+
 footer {
-  display: flex;
-  justify-content: space-between;
   background-color: $light-blue;
+  padding-bottom: 50px;
 }
+
+.bottom-bar {
+  display: flex;
+  height: 68px;
+  margin-bottom: 32px;
+  .logo {
+    color: $white;
+    width: 220px;
+    height: 68px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.875em; 
+    margin-right: auto;
+  }
+}
+
 .bottom-nav {
   display: flex;
+  width: 590px;
   justify-content: space-between;
+  align-items: flex-end;
   color: $white;
   font-size: 1.125em;
   font-weight: 400;
+  a {
+    display: block;
+    text-decoration: none;
+    color: $white;
+    padding-bottom: 5px;
+  }
 
 }
+
+.secondary-bar {
+  display: flex;
+  justify-content: space-between;
+      p {
+      margin: 0;
+      width: 325px;
+      color: $white;
+      font-size: 1.125em;
+    }
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  width: 530px;
+  a {
+    text-decoration: none;
+    color: $gold;
+    padding-bottom: 5px;
+  }
+}
+
+
+
 .secondary-footer {
   background-color: $dark-blue;
+
 }
+a.yellow {
+  color: $gold;
+}
+
+.bottom-contact {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  color: $white;
+  .mail-contact {
+    width: 136px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .author {
+    width: 100px;
+    a {
+      text-decoration: none;
+    }
+  }
+
+}
+.social-contact {
+  display: flex;
+}
+.round-icon {
+  display: flex;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%; 
+  margin-right: 5px;
+}
+
+.icon-vk {
+  background: $dark-dark-blue url(../img/icon-vk.png) no-repeat center;
+}
+.icon-facebook {
+  background: $dark-dark-blue url(../img/icon-facebook.png) no-repeat center;
+}
+.icon-instagramm {
+  background: $dark-dark-blue url(../img/icon-instagramm.png) no-repeat center;
+}
+
+
+
