@@ -447,23 +447,23 @@ textarea {
 /*
   VARIABLES
 */
-/* line 24, ../scss/_base.scss */
+/* line 25, ../scss/_base.scss */
 html {
   box-sizing: border-box;
   font-family: Cuprum, Arial, sans-serif;
 }
 
-/* line 28, ../scss/_base.scss */
+/* line 29, ../scss/_base.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 32, ../scss/_base.scss */
+/* line 33, ../scss/_base.scss */
 body {
   font-size: 16px;
 }
 
-/* line 38, ../scss/_base.scss */
+/* line 37, ../scss/_base.scss */
 h3 {
   font-family: Cuprum, Arial, sans-serif;
   font-size: 1.5em;
@@ -472,7 +472,7 @@ h3 {
 }
 
 /* buttons */
-/* line 47, ../scss/_base.scss */
+/* line 46, ../scss/_base.scss */
 .btn {
   display: flex;
   justify-content: center;
@@ -488,32 +488,32 @@ h3 {
   line-height: 1.28571;
 }
 
-/* line 61, ../scss/_base.scss */
+/* line 60, ../scss/_base.scss */
 .btn-135 {
   width: 135px;
 }
 
-/* line 64, ../scss/_base.scss */
+/* line 63, ../scss/_base.scss */
 .btn-140 {
   width: 140px;
 }
 
-/* line 67, ../scss/_base.scss */
+/* line 66, ../scss/_base.scss */
 .btn-195 {
   width: 195px;
 }
 
-/* line 70, ../scss/_base.scss */
+/* line 69, ../scss/_base.scss */
 .btn-220 {
   width: 220px;
 }
 
-/* line 73, ../scss/_base.scss */
+/* line 72, ../scss/_base.scss */
 .btn-253 {
   width: 253px;
 }
 
-/* line 76, ../scss/_base.scss */
+/* line 75, ../scss/_base.scss */
 .btn-300 {
   width: 300px;
 }
@@ -776,39 +776,155 @@ main {
 }
 /* line 214, ../scss/_modules.scss */
 .promo-slider {
+  position: relative;
   width: 620px;
   height: 266px;
-  background-color: #cc79d1;
   margin-right: 20px;
 }
-/* line 220, ../scss/_modules.scss */
+/* line 219, ../scss/_modules.scss */
+.promo-slider input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+/* line 224, ../scss/_modules.scss */
 .promo .btn {
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
 }
+/* line 229, ../scss/_modules.scss */
+.promo .learn-more {
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+  background-color: #ee3643;
+}
 
-/* line 228, ../scss/_modules.scss */
+/*////////////slider //////////////*/
+/* line 239, ../scss/_modules.scss */
+.switch {
+  position: absolute;
+  display: flex;
+  bottom: 36px;
+  left: 295px;
+  width: 48px;
+  height: 10px;
+}
+/* line 246, ../scss/_modules.scss */
+.switch label {
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+/* line 257, ../scss/_modules.scss */
+.switch-2 {
+  width: 575px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 112px;
+  left: 25px;
+  height: 42px;
+}
+/* line 265, ../scss/_modules.scss */
+.switch-2 label {
+  width: 22px;
+  height: 40px;
+  cursor: pointer;
+  box-sizing: content-box;
+  background: url("../img/arrow-left.png") no-repeat 100%;
+}
+/* line 271, ../scss/_modules.scss */
+.switch-2 label:last-child {
+  background: url("../img/arrow-right.png") no-repeat 100%;
+}
+
+/* line 278, ../scss/_modules.scss */
+#slide-1:checked ~ .switch label[for="slide-1"],
+#slide-2:checked ~ .switch label[for="slide-2"] {
+  background: #ee3643;
+}
+
+/* line 283, ../scss/_modules.scss */
+.slide {
+  min-height: 100%;
+  overflow: hidden;
+  display: none;
+  padding: 27px 20px 22px 24px;
+}
+
+/* line 289, ../scss/_modules.scss */
+.slides {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 294, ../scss/_modules.scss */
+#slide-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+/* line 298, ../scss/_modules.scss */
+#slide-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+/* line 303, ../scss/_modules.scss */
+.text-wrapper {
+  width: 240px;
+  color: #fff;
+}
+/* line 307, ../scss/_modules.scss */
+.text-wrapper h2 {
+  text-transform: uppercase;
+  font-size: 2.25em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* line 313, ../scss/_modules.scss */
+.text-wrapper p {
+  font-size: 1.125em;
+  margin-top: 0;
+}
+
+/* line 319, ../scss/_modules.scss */
+.slide:nth-child(1) {
+  background: url("../img/slider-wall-1.png") no-repeat 100%;
+}
+
+/* line 323, ../scss/_modules.scss */
+.slide:nth-child(2) {
+  background: url("../img/slider-wall-2.png") no-repeat 100%;
+}
+
+/*////////////slider //////////////*/
+/* line 329, ../scss/_modules.scss */
 .materials, .dely {
   background-color: #f6b22d;
 }
 
-/* line 231, ../scss/_modules.scss */
+/* line 332, ../scss/_modules.scss */
 .instruments {
   background-color: #4aafde;
 }
 
-/* line 234, ../scss/_modules.scss */
+/* line 335, ../scss/_modules.scss */
 .tech {
   background-color: #cc79d1;
 }
 
-/* line 237, ../scss/_modules.scss */
+/* line 338, ../scss/_modules.scss */
 .sales {
   background-color: #85d179;
 }
 
-/* line 241, ../scss/_modules.scss */
+/* line 342, ../scss/_modules.scss */
 .pop-goods,
 .pop-prod {
   display: flex;
@@ -818,26 +934,26 @@ main {
   margin-bottom: 20px;
   padding: 0 25px;
 }
-/* line 249, ../scss/_modules.scss */
+/* line 350, ../scss/_modules.scss */
 .pop-goods h2,
 .pop-prod h2 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.875em;
 }
-/* line 254, ../scss/_modules.scss */
+/* line 355, ../scss/_modules.scss */
 .pop-goods a,
 .pop-prod a {
   background-color: #ee3643;
 }
 
-/* line 258, ../scss/_modules.scss */
+/* line 359, ../scss/_modules.scss */
 .pop-wrap {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-/* line 262, ../scss/_modules.scss */
+/* line 363, ../scss/_modules.scss */
 .pop-wrap article {
   width: 220px;
   height: 318px;
@@ -847,7 +963,7 @@ main {
   border: 1px solid #e5e5e5;
   font-family: "PT Sans";
 }
-/* line 270, ../scss/_modules.scss */
+/* line 371, ../scss/_modules.scss */
 .pop-wrap article h3 {
   display: flex;
   align-items: center;
@@ -860,7 +976,7 @@ main {
   margin: 0;
   margin-bottom: 5px;
 }
-/* line 282, ../scss/_modules.scss */
+/* line 383, ../scss/_modules.scss */
 .pop-wrap article b {
   margin-top: 18px;
   margin-bottom: 13px;
@@ -870,7 +986,7 @@ main {
   text-decoration: line-through;
   text-transform: uppercase;
 }
-/* line 291, ../scss/_modules.scss */
+/* line 392, ../scss/_modules.scss */
 .pop-wrap article .new-price {
   color: #fff;
   background-color: #ee3643;
@@ -879,7 +995,7 @@ main {
   border-radius: 5px;
 }
 
-/* line 301, ../scss/_modules.scss */
+/* line 402, ../scss/_modules.scss */
 .wrap {
   display: flex;
   align-items: center;
@@ -887,13 +1003,14 @@ main {
   justify-content: flex-start;
 }
 
-/* line 307, ../scss/_modules.scss */
+/* line 408, ../scss/_modules.scss */
 .prod-wrap {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 65px;
 }
-/* line 311, ../scss/_modules.scss */
+/* line 413, ../scss/_modules.scss */
 .prod-wrap article {
   width: 220px;
   height: 145px;
@@ -904,14 +1021,53 @@ main {
   margin-bottom: 20px;
 }
 
-/* line 322, ../scss/_modules.scss */
+/* line 424, ../scss/_modules.scss */
+.services-bg {
+  background-color: #f3f7f9;
+}
+/* line 426, ../scss/_modules.scss */
+.services-bg .services {
+  padding-top: 68px;
+  padding-bottom: 102px;
+}
+/* line 429, ../scss/_modules.scss */
+.services-bg .services-header {
+  width: 400px;
+}
+/* line 431, ../scss/_modules.scss */
+.services-bg .services-header h2 {
+  font-size: 1.875em;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* line 437, ../scss/_modules.scss */
+.services-bg .services-header p {
+  font-family: "PT Sans";
+  font-size: 0.8125em;
+  margin: 0;
+}
+
+/* line 447, ../scss/_modules.scss */
+.user-profile section:first-child {
+  width: 300px;
+  height: 45px;
+  padding: 14px 70px 11px 46px;
+  background-color: #fff;
+}
+/* line 452, ../scss/_modules.scss */
+.user-profile section:first-child .user-name {
+  font-size: 1.3125em;
+  color: #000;
+}
+
+/* line 460, ../scss/_modules.scss */
 footer {
   display: flex;
   justify-content: space-between;
   background-color: #32425c;
 }
 
-/* line 327, ../scss/_modules.scss */
+/* line 465, ../scss/_modules.scss */
 .bottom-nav {
   display: flex;
   justify-content: space-between;
@@ -920,7 +1076,7 @@ footer {
   font-weight: 400;
 }
 
-/* line 335, ../scss/_modules.scss */
+/* line 473, ../scss/_modules.scss */
 .secondary-footer {
   background-color: #293449;
 }
