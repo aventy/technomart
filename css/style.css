@@ -447,23 +447,23 @@ textarea {
 /*
   VARIABLES
 */
-/* line 31, ../scss/_base.scss */
+/* line 32, ../scss/_base.scss */
 html {
   box-sizing: border-box;
   font-family: Cuprum, Arial, sans-serif;
 }
 
-/* line 35, ../scss/_base.scss */
+/* line 36, ../scss/_base.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 39, ../scss/_base.scss */
+/* line 40, ../scss/_base.scss */
 body {
   font-size: 16px;
 }
 
-/* line 43, ../scss/_base.scss */
+/* line 44, ../scss/_base.scss */
 h3 {
   font-family: Cuprum, Arial, sans-serif;
   font-size: 1.5em;
@@ -472,7 +472,7 @@ h3 {
 }
 
 /* buttons */
-/* line 52, ../scss/_base.scss */
+/* line 53, ../scss/_base.scss */
 .btn {
   display: flex;
   justify-content: center;
@@ -488,32 +488,32 @@ h3 {
   line-height: 1.28571;
 }
 
-/* line 66, ../scss/_base.scss */
+/* line 67, ../scss/_base.scss */
 .btn-135 {
   width: 135px;
 }
 
-/* line 69, ../scss/_base.scss */
+/* line 70, ../scss/_base.scss */
 .btn-140 {
   width: 140px;
 }
 
-/* line 72, ../scss/_base.scss */
+/* line 73, ../scss/_base.scss */
 .btn-195 {
   width: 195px;
 }
 
-/* line 75, ../scss/_base.scss */
+/* line 76, ../scss/_base.scss */
 .btn-220 {
   width: 220px;
 }
 
-/* line 78, ../scss/_base.scss */
+/* line 79, ../scss/_base.scss */
 .btn-253 {
   width: 253px;
 }
 
-/* line 81, ../scss/_base.scss */
+/* line 82, ../scss/_base.scss */
 .btn-300 {
   width: 300px;
 }
@@ -815,35 +815,36 @@ main {
   margin-bottom: 20px;
   width: 300px;
   height: 123px;
+  overflow: hidden;
 }
-/* line 252, ../scss/_modules.scss */
+/* line 253, ../scss/_modules.scss */
 .promo-item h3 {
   margin: 0;
 }
-/* line 256, ../scss/_modules.scss */
+/* line 257, ../scss/_modules.scss */
 .promo-item:nth-child(3) {
   margin-right: 0;
   margin-bottom: 0;
 }
-/* line 260, ../scss/_modules.scss */
+/* line 261, ../scss/_modules.scss */
 .promo-slider {
   position: relative;
   width: 620px;
   height: 266px;
   margin-right: 20px;
 }
-/* line 265, ../scss/_modules.scss */
+/* line 266, ../scss/_modules.scss */
 .promo-slider input[type=radio] {
   position: absolute;
   opacity: 0;
 }
-/* line 270, ../scss/_modules.scss */
+/* line 271, ../scss/_modules.scss */
 .promo .btn {
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
 }
-/* line 275, ../scss/_modules.scss */
+/* line 276, ../scss/_modules.scss */
 .promo .learn-more {
   position: absolute;
   left: 25px;
@@ -852,7 +853,7 @@ main {
 }
 
 /*////////////slider //////////////*/
-/* line 286, ../scss/_modules.scss */
+/* line 287, ../scss/_modules.scss */
 .switch {
   position: absolute;
   display: flex;
@@ -861,7 +862,7 @@ main {
   width: 48px;
   height: 10px;
 }
-/* line 293, ../scss/_modules.scss */
+/* line 294, ../scss/_modules.scss */
 .switch label {
   width: 4px;
   height: 4px;
@@ -873,7 +874,7 @@ main {
   box-sizing: content-box;
 }
 
-/* line 304, ../scss/_modules.scss */
+/* line 305, ../scss/_modules.scss */
 .switch-2 {
   width: 575px;
   position: absolute;
@@ -883,7 +884,7 @@ main {
   left: 25px;
   height: 42px;
 }
-/* line 312, ../scss/_modules.scss */
+/* line 313, ../scss/_modules.scss */
 .switch-2 label {
   width: 22px;
   height: 40px;
@@ -891,18 +892,18 @@ main {
   box-sizing: content-box;
   background: url("../img/arrow-left.png") no-repeat 100%;
 }
-/* line 318, ../scss/_modules.scss */
+/* line 319, ../scss/_modules.scss */
 .switch-2 label:last-child {
   background: url("../img/arrow-right.png") no-repeat 100%;
 }
 
-/* line 325, ../scss/_modules.scss */
+/* line 326, ../scss/_modules.scss */
 #slide-1:checked ~ .switch label[for="slide-1"],
 #slide-2:checked ~ .switch label[for="slide-2"] {
   background: #ee3643;
 }
 
-/* line 330, ../scss/_modules.scss */
+/* line 331, ../scss/_modules.scss */
 .slide {
   min-height: 100%;
   overflow: hidden;
@@ -910,72 +911,79 @@ main {
   padding: 27px 20px 22px 24px;
 }
 
-/* line 336, ../scss/_modules.scss */
+/* line 337, ../scss/_modules.scss */
 .slides {
   height: 100%;
   width: 100%;
 }
 
-/* line 341, ../scss/_modules.scss */
+/* line 342, ../scss/_modules.scss */
 #slide-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
 
-/* line 345, ../scss/_modules.scss */
+/* line 346, ../scss/_modules.scss */
 #slide-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
 
-/* line 350, ../scss/_modules.scss */
+/* line 351, ../scss/_modules.scss */
 .text-wrapper {
   width: 240px;
   color: #fff;
 }
-/* line 354, ../scss/_modules.scss */
+/* line 355, ../scss/_modules.scss */
 .text-wrapper h2 {
   text-transform: uppercase;
   font-size: 2.25em;
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 360, ../scss/_modules.scss */
+/* line 361, ../scss/_modules.scss */
 .text-wrapper p {
   font-size: 1.125em;
   margin-top: 0;
 }
 
-/* line 366, ../scss/_modules.scss */
+/* line 367, ../scss/_modules.scss */
 .slide:nth-child(1) {
   background: url("../img/slider-wall-1.png") no-repeat 100%;
 }
 
-/* line 370, ../scss/_modules.scss */
+/* line 371, ../scss/_modules.scss */
 .slide:nth-child(2) {
   background: url("../img/slider-wall-2.png") no-repeat 100%;
 }
 
-/*////////////slider //////////////*/
-/* line 376, ../scss/_modules.scss */
+/*////////////// //////////////*/
+/* line 377, ../scss/_modules.scss */
 .materials, .dely {
   background-color: #f6b22d;
 }
 
-/* line 379, ../scss/_modules.scss */
+/* line 380, ../scss/_modules.scss */
 .instruments {
   background-color: #4aafde;
 }
 
-/* line 382, ../scss/_modules.scss */
+/* line 383, ../scss/_modules.scss */
 .tech {
   background-color: #cc79d1;
 }
 
-/* line 385, ../scss/_modules.scss */
+/* line 386, ../scss/_modules.scss */
 .sales {
   background-color: #85d179;
 }
 
 /* line 389, ../scss/_modules.scss */
+.pop-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* line 394, ../scss/_modules.scss */
 .pop-goods,
 .pop-prod {
   display: flex;
@@ -985,68 +993,20 @@ main {
   margin-bottom: 20px;
   padding: 0 25px;
 }
-/* line 397, ../scss/_modules.scss */
+/* line 402, ../scss/_modules.scss */
 .pop-goods h2,
 .pop-prod h2 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.875em;
 }
-/* line 402, ../scss/_modules.scss */
+/* line 407, ../scss/_modules.scss */
 .pop-goods a,
 .pop-prod a {
   background-color: #ee3643;
 }
 
-/* line 406, ../scss/_modules.scss */
-.pop-wrap {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-/* line 410, ../scss/_modules.scss */
-.pop-wrap article {
-  width: 220px;
-  height: 318px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #e5e5e5;
-  font-family: "PT Sans";
-}
-/* line 418, ../scss/_modules.scss */
-.pop-wrap article h3 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 157px;
-  color: #000;
-  font-size: 1.125em;
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: 5px;
-}
-/* line 430, ../scss/_modules.scss */
-.pop-wrap article b {
-  margin-top: 18px;
-  margin-bottom: 13px;
-  color: #999;
-  font-size: 1.0625em;
-  font-weight: 700;
-  text-decoration: line-through;
-  text-transform: uppercase;
-}
-/* line 439, ../scss/_modules.scss */
-.pop-wrap article .new-price {
-  color: #fff;
-  background-color: #ee3643;
-  text-decoration: none;
-  padding: 11px 18px 11px 34px;
-  border-radius: 5px;
-}
-
-/* line 449, ../scss/_modules.scss */
+/* line 412, ../scss/_modules.scss */
 .wrap {
   display: flex;
   align-items: center;
@@ -1054,14 +1014,14 @@ main {
   justify-content: flex-start;
 }
 
-/* line 455, ../scss/_modules.scss */
+/* line 418, ../scss/_modules.scss */
 .prod-wrap {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 65px;
 }
-/* line 460, ../scss/_modules.scss */
+/* line 423, ../scss/_modules.scss */
 .prod-wrap article {
   width: 220px;
   height: 145px;
@@ -1072,45 +1032,364 @@ main {
   margin-bottom: 20px;
 }
 
-/* line 471, ../scss/_modules.scss */
+/* line 434, ../scss/_modules.scss */
 .services-bg {
   background-color: #f3f7f9;
 }
-/* line 473, ../scss/_modules.scss */
+/* line 436, ../scss/_modules.scss */
 .services-bg .services {
   padding-top: 68px;
   padding-bottom: 102px;
 }
-/* line 476, ../scss/_modules.scss */
+/* line 439, ../scss/_modules.scss */
 .services-bg .services-header {
   width: 400px;
 }
-/* line 478, ../scss/_modules.scss */
+/* line 441, ../scss/_modules.scss */
 .services-bg .services-header h2 {
   font-size: 1.875em;
   margin-top: 0;
   margin-bottom: 30px;
 }
-/* line 484, ../scss/_modules.scss */
+/* line 447, ../scss/_modules.scss */
 .services-bg .services-header p {
   font-family: "PT Sans";
   font-size: 0.8125em;
   margin: 0;
 }
 
-/* line 496, ../scss/_modules.scss */
+/* line 459, ../scss/_modules.scss */
+.breadcrumps {
+  display: flex;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+/* line 463, ../scss/_modules.scss */
+.breadcrumps a {
+  display: block;
+  position: relative;
+  margin-right: 40px;
+  font-size: 0.8125em;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 471, ../scss/_modules.scss */
+.breadcrumps a:first-child {
+  background: url("../img/icon-home.png") no-repeat;
+  width: 15px;
+  height: 12px;
+}
+/* line 476, ../scss/_modules.scss */
+.breadcrumps a:not(:last-child):after {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  content: '';
+  background: url("../img/icon-crumps.png") no-repeat;
+  width: 8px;
+  height: 12px;
+}
+
+/* line 490, ../scss/_modules.scss */
+.partition {
+  padding: 33px 30px;
+  margin-bottom: 20px;
+  background-color: #f1f5f7;
+}
+/* line 494, ../scss/_modules.scss */
+.partition h1 {
+  color: #32425c;
+  margin: 0;
+  font-size: 1.875em;
+  text-transform: uppercase;
+}
+
+/* line 503, ../scss/_modules.scss */
+.content {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+/* line 508, ../scss/_modules.scss */
+.filter {
+  width: 220px;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+/* line 515, ../scss/_modules.scss */
+.search-result {
+  width: 700px;
+  height: 1150px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 521, ../scss/_modules.scss */
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 700px;
+  height: 1000px;
+  margin-bottom: 50px;
+}
+
+/* line 530, ../scss/_modules.scss */
+.goods-card {
+  width: 220px;
+  height: 318px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  overflow: hidden;
+}
+/* line 539, ../scss/_modules.scss */
+.goods-card .product-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 172px;
+}
+/* line 544, ../scss/_modules.scss */
+.goods-card .product-img .hidden {
+  display: none;
+}
+/* line 546, ../scss/_modules.scss */
+.goods-card .product-img .hidden a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  width: 135px;
+  height: 38px;
+  border: 3px solid #63a63e;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #32425c;
+  margin-top: 7px;
+}
+/* line 559, ../scss/_modules.scss */
+.goods-card .product-img .hidden a:first-child {
+  background-color: #63a63e;
+  color: #fff;
+  box-shadow: inset 0 -3px 0 #367315;
+  border: none;
+  position: relative;
+}
+/* line 565, ../scss/_modules.scss */
+.goods-card .product-img .hidden a:first-child::before {
+  position: absolute;
+  content: url("../img/icon-basket.png");
+  left: 20px;
+  top: 10px;
+}
+/* line 577, ../scss/_modules.scss */
+.goods-card .desc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 583, ../scss/_modules.scss */
+.goods-card .desc-card h3 {
+  color: #000;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'PT Sans';
+}
+/* line 591, ../scss/_modules.scss */
+.goods-card .desc-card b {
+  margin-top: 18px;
+  margin: 0;
+  color: #999;
+  font-size: 1.0625em;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  font-family: 'PT Sans';
+}
+/* line 601, ../scss/_modules.scss */
+.goods-card .desc-card .new-price {
+  margin-top: 13px;
+  color: #fff;
+  background-color: #ee3643;
+  text-decoration: none;
+  padding: 13px 20px 13px 36px;
+  border-radius: 3px;
+  position: relative;
+}
+/* line 609, ../scss/_modules.scss */
+.goods-card .desc-card .new-price::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -22px;
+  border-top: 24px solid transparent;
+  border-left: 23px solid #ee3643;
+  border-bottom: 24px solid transparent;
+}
+
+/* line 625, ../scss/_modules.scss */
+.sort {
+  width: 700px;
+  height: 38px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #f7f3ec;
+  padding: 14px 106px 15px 19px;
+  font-family: 'PT Sans';
+  font-size: 0.8125em;
+  text-transform: uppercase;
+}
+/* line 635, ../scss/_modules.scss */
+.sort-type {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 639, ../scss/_modules.scss */
+.sort legend {
+  margin: 0;
+  padding: 0;
+  margin-right: 140px;
+}
+/* line 644, ../scss/_modules.scss */
+.sort input[type='radio'] {
+  display: none;
+  position: relative;
+}
+
+/* line 650, ../scss/_modules.scss */
+#by-price + label,
+#by-type + label,
+#by-func + label {
+  color: #e5e5e5;
+  border-bottom: 1px dotted #ee3643;
+}
+
+/* line 658, ../scss/_modules.scss */
+#to-low + label {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  border-top: 11px solid #e5e5e5;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+/* line 668, ../scss/_modules.scss */
+#to-high + label {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 49px;
+  border-bottom: 11px solid #e5e5e5;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+/* line 679, ../scss/_modules.scss */
+.flag-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PT Sans';
+  color: #fff;
+  font-size: 1em;
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 30px;
+  transform: rotate(45deg);
+  background-color: #ee3643;
+  top: 5px;
+  right: -30px;
+}
+
+/* line 696, ../scss/_modules.scss */
+.materials {
+  position: relative;
+}
+
+/* line 702, ../scss/_modules.scss */
+.pagination {
+  display: flex;
+  width: 290px;
+  font-family: "PT Sans";
+}
+
+/* line 707, ../scss/_modules.scss */
+.page {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  font-size: 0.8125em;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px solid #e5e5e5;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+/* line 722, ../scss/_modules.scss */
+.current-page {
+  background-color: #ef3341;
+  border: 1px solid #ef3341;
+  color: #fff;
+}
+
+/* line 728, ../scss/_modules.scss */
+.next-page {
+  padding: 13px 30px 12px 32px;
+  width: 140px;
+}
+
+/* line 737, ../scss/_modules.scss */
+.service-wrap {
+  background-color: #f1f5f7;
+  padding-top: 66px;
+  padding-bottom: 72px;
+}
+
+/* line 744, ../scss/_modules.scss */
+.service h1 {
+  margin: 0;
+  font-size: 1.875em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+/* line 750, ../scss/_modules.scss */
+.service p {
+  margin: 0;
+  font-family: 'PT Sans';
+  font-size: 0.8125em;
+}
+
+/* line 762, ../scss/_modules.scss */
 footer {
   background-color: #32425c;
   padding-bottom: 50px;
 }
 
-/* line 501, ../scss/_modules.scss */
+/* line 767, ../scss/_modules.scss */
 .bottom-bar {
   display: flex;
   height: 68px;
   margin-bottom: 32px;
 }
-/* line 505, ../scss/_modules.scss */
+/* line 771, ../scss/_modules.scss */
 .bottom-bar .logo {
   color: #fff;
   width: 220px;
@@ -1123,7 +1402,7 @@ footer {
   margin-right: auto;
 }
 
-/* line 518, ../scss/_modules.scss */
+/* line 784, ../scss/_modules.scss */
 .bottom-nav {
   display: flex;
   width: 590px;
@@ -1133,7 +1412,7 @@ footer {
   font-size: 1.125em;
   font-weight: 400;
 }
-/* line 526, ../scss/_modules.scss */
+/* line 792, ../scss/_modules.scss */
 .bottom-nav a {
   display: block;
   text-decoration: none;
@@ -1141,12 +1420,12 @@ footer {
   padding-bottom: 5px;
 }
 
-/* line 535, ../scss/_modules.scss */
+/* line 801, ../scss/_modules.scss */
 .secondary-bar {
   display: flex;
   justify-content: space-between;
 }
-/* line 538, ../scss/_modules.scss */
+/* line 804, ../scss/_modules.scss */
 .secondary-bar p {
   margin: 0;
   width: 325px;
@@ -1154,30 +1433,30 @@ footer {
   font-size: 1.125em;
 }
 
-/* line 546, ../scss/_modules.scss */
+/* line 812, ../scss/_modules.scss */
 .catalog {
   display: flex;
   justify-content: space-between;
   width: 530px;
 }
-/* line 550, ../scss/_modules.scss */
+/* line 816, ../scss/_modules.scss */
 .catalog a {
   text-decoration: none;
   color: #f6b22d;
   padding-bottom: 5px;
 }
 
-/* line 559, ../scss/_modules.scss */
+/* line 825, ../scss/_modules.scss */
 .secondary-footer {
   background-color: #293449;
 }
 
-/* line 563, ../scss/_modules.scss */
+/* line 829, ../scss/_modules.scss */
 a.yellow {
   color: #f6b22d;
 }
 
-/* line 567, ../scss/_modules.scss */
+/* line 833, ../scss/_modules.scss */
 .bottom-contact {
   display: flex;
   justify-content: space-between;
@@ -1185,29 +1464,29 @@ a.yellow {
   padding-bottom: 35px;
   color: #fff;
 }
-/* line 573, ../scss/_modules.scss */
+/* line 839, ../scss/_modules.scss */
 .bottom-contact .mail-contact {
   width: 136px;
 }
-/* line 575, ../scss/_modules.scss */
+/* line 841, ../scss/_modules.scss */
 .bottom-contact .mail-contact a {
   text-decoration: none;
 }
-/* line 579, ../scss/_modules.scss */
+/* line 845, ../scss/_modules.scss */
 .bottom-contact .author {
   width: 100px;
 }
-/* line 581, ../scss/_modules.scss */
+/* line 847, ../scss/_modules.scss */
 .bottom-contact .author a {
   text-decoration: none;
 }
 
-/* line 587, ../scss/_modules.scss */
+/* line 853, ../scss/_modules.scss */
 .social-contact {
   display: flex;
 }
 
-/* line 590, ../scss/_modules.scss */
+/* line 856, ../scss/_modules.scss */
 .round-icon {
   display: flex;
   justify-content: center;
@@ -1217,17 +1496,17 @@ a.yellow {
   margin-right: 5px;
 }
 
-/* line 599, ../scss/_modules.scss */
+/* line 865, ../scss/_modules.scss */
 .icon-vk {
   background: #161d29 url(../img/icon-vk.png) no-repeat center;
 }
 
-/* line 602, ../scss/_modules.scss */
+/* line 868, ../scss/_modules.scss */
 .icon-facebook {
   background: #161d29 url(../img/icon-facebook.png) no-repeat center;
 }
 
-/* line 605, ../scss/_modules.scss */
+/* line 871, ../scss/_modules.scss */
 .icon-instagramm {
   background: #161d29 url(../img/icon-instagramm.png) no-repeat center;
 }
@@ -1388,6 +1667,114 @@ a.yellow {
 .author a:active {
   text-decoration: none;
   color: #ee3643;
+}
+
+/* line 163, ../scss/_state.scss */
+.page:hover {
+  border-color: #8b8e94;
+}
+/* line 166, ../scss/_state.scss */
+.page:active {
+  border-color: #ef3341;
+}
+
+/* line 172, ../scss/_state.scss */
+.goods-card:hover {
+  box-shadow: 0 10px 25px rgba(22, 29, 41, 0.5);
+}
+/* line 175, ../scss/_state.scss */
+.goods-card:hover .product-img img {
+  display: none;
+}
+/* line 178, ../scss/_state.scss */
+.goods-card:hover .product-img .hidden {
+  display: flex;
+  flex-direction: column;
+}
+/* line 181, ../scss/_state.scss */
+.goods-card:hover .product-img .hidden a:first-child:hover {
+  background-color: #85d179;
+}
+/* line 183, ../scss/_state.scss */
+.goods-card:hover .product-img .hidden a:first-child:hover::before {
+  content: url("../img/icon-basket-hover.png");
+}
+/* line 187, ../scss/_state.scss */
+.goods-card:hover .product-img .hidden a:first-child:active {
+  background-color: #367315;
+  border: none;
+}
+
+/* line 197, ../scss/_state.scss */
+.prod-wrap article:hover {
+  box-shadow: 0 10px 25px rgba(139, 142, 148, 0.5);
+}
+/* line 200, ../scss/_state.scss */
+.prod-wrap article:active {
+  box-shadow: 0 4px 10px rgba(153, 153, 153, 0.5);
+}
+/* line 202, ../scss/_state.scss */
+.prod-wrap article:active img {
+  opacity: 0.5;
+}
+
+/* line 211, ../scss/_state.scss */
+.promo .btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 214, ../scss/_state.scss */
+.promo .btn:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 217, ../scss/_state.scss */
+.promo .learn-more:hover,
+.promo .learn-more:active {
+  background-color: #cb2834;
+}
+
+/* line 226, ../scss/_state.scss */
+.pop-goods a:hover,
+.pop-goods a:active {
+  background-color: #cb2834;
+}
+
+/* line 233, ../scss/_state.scss */
+#by-price + label:hover,
+#by-type + label:hover,
+#by-func + label:hover {
+  color: #000;
+  border-bottom: 1px solid #ee3643;
+}
+
+/* line 240, ../scss/_state.scss */
+#by-price:checked + label,
+#by-type:checked + label,
+#by-func:checked + label,
+#by-price:active + label,
+#by-type:active + label,
+#by-func:active + label {
+  color: #ee3643;
+  border: none;
+}
+
+/* line 252, ../scss/_state.scss */
+#to-low + label:hover {
+  border-top: 11px solid #000;
+}
+
+/* line 255, ../scss/_state.scss */
+#to-high + label:hover {
+  border-bottom: 11px solid #000;
+}
+
+/* line 258, ../scss/_state.scss */
+#to-low:checked + label {
+  border-top: 11px solid #ee3643;
+}
+
+/* line 261, ../scss/_state.scss */
+#to-high:checked + label {
+  border-bottom: 11px solid #ee3643;
 }
 
 /*# sourceMappingURL=style.css.map */
