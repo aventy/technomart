@@ -505,13 +505,177 @@ main {
   padding-top: 20px;
   padding-bottom: 60px;
 }
+//////////////////////////////////////////
 .filter {
   width: 220px;
   height: 760px;
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  font-family: 'PT Sans';
+  text-transform: uppercase;
+  b {
+    height: 38px;
+    background-color: $coral;
+    font-size: 0.8125em;
+    padding: 14px 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  legend {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 1.0625em;
+    font-weight: 700;
+    
+  }
+  fieldset {
+    border: none;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    
+  }
+  input[type="submit"] {
+    height: 38px;
+    background-color: $white;
+    border: 1px solid $grey;
+    font-size: 0.8125em;
+    color: $black;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
+
 }
+
+.double-range {
+  border-radius: 3px;
+  position: relative;
+  background-color: $coral;
+  height: 80px;
+  margin-bottom: 10px;
+  .range {
+    position: absolute;
+    top: 39px;
+    right: 20px;
+    width: 180px;
+    height: 2px;
+    background-color: $grey;
+  }
+  .selected {
+    position: absolute;
+    top: 39px;
+    left: 20px;
+    width: 152px;
+    height: 2px;
+    background-color: $green;
+  }
+  .thumb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 2px 0 rgba(0, 1, 1, 0.14);
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  .dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #ababab;        
+    border-radius: 2px;
+  }
+  .t1 {
+    top: 29px;
+    left: 20px;
+  }
+  .t2 {
+    top: 29px;
+    left: 152px;
+  }
+
+  .d1 {
+    top: 38px;
+    left: 28px;
+  }
+
+  .d2 {
+    top: 38px;
+    left: 160px;
+  }
+
+}
+
+#price-min,
+#price-max {
+  width: 95px;
+  height: 38px;
+  background-color: $coral;
+  border-radius: 3px;
+  text-align: center;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+}
+#price-max {
+  margin-left: 8px;
+}
+////////////////////////////////
+.grid,
+.features {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 0.8125em;
+    margin-bottom: 25px;
+    padding-left: 35px;
+    position: relative;
+    &:last-child {
+      margin-bottom: 20px;
+    }
+    
+  }
+  input {
+    display: none;
+  }
+
+}
+
+.features label {
+  &:last-child {
+    margin-bottom: 60px;
+  }
+  &::before {
+  position: absolute;
+  content: '';
+  top: -3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: solid 4px $grey;
+  border-radius: 15px;
+  background-color: $white;
+  }
+
+}
+.grid label:before {
+  position: absolute;
+  content: '';
+  top: -3px;
+  left: 0;
+  border: solid 2px $grey;
+  border-radius: 4px;
+  background-color: $white;
+  width: 23px;
+  height: 23px;
+}
+
+
+
+////////////////////////////////////////////////////
 .search-result {
   width: 700px;
   height: 1150px;

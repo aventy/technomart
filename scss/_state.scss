@@ -222,7 +222,8 @@
 
 ///////////////////////////
 
-.pop-goods {
+.pop-goods,
+.pop-prod {
   a:hover,
   a:active {
     background-color: $red-hover;
@@ -261,3 +262,56 @@
 #to-high:checked + label {
   border-bottom: 11px solid $red;
 }
+//////////////////////////////////////
+
+.grid label:hover:before {
+  border: solid 4px $dark-grey;
+}
+#bosch:checked + label:after,
+#interskol:checked + label:after,
+#makita:checked + label:after,
+#dewalt:checked + label:after,
+#hitachi:checked + label:after {
+  position: absolute;
+  content: '';
+  bottom: 5px;
+  left: 10px;
+  width: 13px;
+  height: 23px;
+  border-right: 5px solid $grey;
+  border-bottom: 5px solid $grey;
+  transform: rotate(45deg);
+  box-shadow: 3px 0 0 0 $white, inset -3px 0 0 0 $white;
+}
+#bosch:hover:checked + label:after,
+#interskol:hover:checked + label:after,
+#makita:hover:checked + label:after,
+#dewalt:hover:checked + label:after,
+#hitachi:hover:checked + label:after {
+  border-right: 5px solid $dark-grey;
+  border-bottom: 5px solid $dark-grey;
+}
+
+
+.features label:hover:before {
+  border: solid 2px $dark-grey;
+}
+#battery:checked + label:after,
+#socket:checked + label:after {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: $grey;
+  
+} 
+#battery:hover:checked + label:after,
+#socket:hover:checked + label:after {
+  
+  background-color: $light-grey;
+}
+
+
