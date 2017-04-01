@@ -108,6 +108,43 @@
   }
 }
 
+/// slider 1
+
+
+.promo-slider #slide-1:checked ~ .switch label[for="slide-1"],
+.promo-slider #slide-2:checked ~ .switch label[for="slide-2"] { 
+  background: $red;
+}
+.promo-slider #slide-1:checked ~ .slides .slide:nth-child(1),
+.promo-slider #slide-2:checked ~ .slides .slide:nth-child(2) { 
+  display: block;
+}
+
+////////// slider 2 
+
+#slide-item1:checked ~ .switcher label[for="slide-item1"],
+#slide-item2:checked ~ .switcher label[for="slide-item2"],
+#slide-item3:checked ~ .switcher label[for="slide-item3"] {
+  background-color: $white;
+  color: $light-blue; 
+}
+#slide-item3:checked ~ .switcher label[for="slide-item3"] {
+  box-shadow: none;
+}
+
+#slide-item1:checked ~ .service-slides .slidex:nth-child(1),
+#slide-item2:checked ~ .service-slides .slidex:nth-child(2),
+#slide-item3:checked ~ .service-slides .slidex:nth-child(3) {
+  display: block;
+}
+
+
+
+
+
+
+
+
 
 
 /*    FOOTER   */

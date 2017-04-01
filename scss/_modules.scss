@@ -273,12 +273,7 @@ main {
     justify-content: center;
     align-items: center;
   }
-  .learn-more {
-    position: absolute;
-    left: 25px;
-    bottom: 22px;
-    background-color: $red;
-  }
+  
 }
 
 
@@ -323,30 +318,16 @@ main {
 }
 
 
-#slide-1:checked ~ .switch label[for="slide-1"],
-#slide-2:checked ~ .switch label[for="slide-2"] { 
-  background: $red;
-}
-
-.slide{
+.slide {
   min-height: 100%;
   overflow: hidden;
-  display:none;
+  display: none;
   padding: 27px 20px 22px 24px;
 }
 .slides {
   height: 100%;
   width: 100%;
 }
-
-#slide-1:checked ~ .slides .slide:nth-child(1) { 
-  display: block;
-}
-
-#slide-2:checked ~ .slides .slide:nth-child(2) { 
-  display: block;
-}
-
 
 .text-wrapper {
   width: 240px;
@@ -362,18 +343,87 @@ main {
     font-size: 1.125em;
     margin-top: 0;
   }
+  .learn-more {
+    position: absolute;
+    left: 25px;
+    bottom: 22px;
+    background-color: $red;
+  }
 }
 
-.slide:nth-child(1) {
-  background: url("../img/slider-wall-1.png") no-repeat 100%;
+.slide {
+  &:nth-child(1) {
+    background: url("../img/slider-wall-1.png") no-repeat 100%;
+  }
+  &:nth-child(2) {
+    background: url("../img/slider-wall-2.png") no-repeat 100%;
+  }
 }
-
-.slide:nth-child(2) {
-  background: url("../img/slider-wall-2.png") no-repeat 100%;
-}
-
 
 /*////////////// //////////////*/
+
+.service-slider {
+  height: 280px;
+  margin-bottom: 80px;
+  display: flex;        
+  input[type="radio"] {
+    position: relative;
+    display: none;
+  }
+}
+
+.switcher {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+  margin-right: 80px;
+  label {
+    width: 240px;
+    height: 61px;
+    background-color: $light-blue;
+    font-size: 1.3125em;
+    color: $white;
+    font-weight: 700;
+    box-shadow: inset 0 -1px 0 $dark-blue;
+    padding: 20px 22px;
+  }
+}
+
+.slide-text {
+  width: 380px;
+  h2 {
+    color: $dark-blue;
+    font-size: 2.25em;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  p {
+    margin: 0;
+    font-family: "PT Sans";
+    font-size: 0.8125em;
+  }
+}
+
+
+.slidex {
+  width: 620px;
+  height: 285px;
+  display: none;
+  background:  url('../img/garanty-shadow.png') 100% -7px no-repeat; 
+  &:first-child {
+    background:  url('../img/delivery-shadow.png') 100% -7px no-repeat; 
+  }
+  &:last-child {
+    background:  url('../img/credit-shadow.png') 100% -7px no-repeat;
+  }
+}
+
+
+
+
+
+
+///////////////////////////////
 .materials, .dely {
   background-color: $gold;
 }
@@ -435,21 +485,22 @@ main {
   background-color: $services-bg;
   .services {
     padding-top: 68px;
-    padding-bottom: 102px;
-    &-header {
-      width: 400px;
-      h2 {
-        font-size: 1.875em;
-        margin-top: 0;
-        margin-bottom: 30px;
+      &-header {
+        width: 400px;
+        margin-bottom: 75px;
+        h2 {
+          font-size: 1.875em;
+          margin-top: 0;
+          margin-bottom: 30px;
 
+        }
+        p {
+          font-family: "PT Sans";
+          font-size: 0.8125em;
+          margin: 0;
+        }
       }
-      p {
-        font-family: "PT Sans";
-        font-size: 0.8125em;
-        margin: 0;
-      }
-    }
+   
   }
 }
 
@@ -915,6 +966,9 @@ main {
     margin: 0;
     font-family: 'PT Sans';
     font-size: 0.8125em;
+  }
+  &-slides {
+    
   }
 }
 
