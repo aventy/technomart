@@ -7,5 +7,10 @@ Stats:
 	+ SASS
 	+ SMACSS
 	+ Flexbox
+	+ Git
+	+ GitHub
+	+ GitKraken
+	+ Prepros
+	+ Avocode
 * Project features:
 >#pureCSSslider #cssROTATE #boxshadow
