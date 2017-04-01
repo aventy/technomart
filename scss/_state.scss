@@ -1,0 +1,361 @@
+/* top bar*/
+
+// hover
+.logo:hover {
+  background-color: $red-hover;
+}
+.search:hover {
+  background: $dark-blue url(../img/icon-search-hover.png) no-repeat 20px;
+}
+.bookmark:hover,
+.cart:hover {
+  background-color: $dark-blue;
+}
+.bookmark:hover::before {
+  background: url(../img/icon-bookmark-hover.png);
+}
+.to-payment:hover {
+  background-color: $light-green;
+}
+//active
+.logo:active {
+  background-color: $red-hover;
+}
+.search:focus {
+  color: $black;
+  background: $white url(../img/icon-search-focus.png) no-repeat 20px;
+}
+.bookmark:active,
+.cart:active,
+.to-payment:active {
+  color: $light-grey;
+}
+.bookmark:active,
+.cart:active {
+  background-color: $dark-dark-blue;
+}
+
+
+// user - block 
+
+//hover
+
+.user-block {
+  display: flex;
+    a:hover {
+      color: $red;
+    &:not(:last-child):hover::before {
+      background: url(../img/icon-login-hover.png);
+    }
+   }
+}
+//active 
+.user-block {
+  display: flex;
+    a:active {
+      color: $grey;
+    &:not(:last-child):active::before {
+      background: url(../img/icon-login.png);
+    }
+    }
+}
+
+//user-profile 
+
+// hover 
+
+.user-profile {
+    section:first-child {
+        .profile:hover {
+          background: url('../img/icon-user-hover.png') no-repeat 100%;
+        }
+        .logout:hover {
+          background: url('../img/icon-logout-hover.png') no-repeat 100%;
+        }
+    }
+    section:last-child {
+      a:hover {
+        color: $red;
+        }
+    }
+}
+//active 
+.user-profile {
+    section:first-child {
+        .profile:active {
+          background: url('../img/icon-user.png') no-repeat 100%;
+        }
+        .logout:active {
+          background: url('../img/icon-logout.png') no-repeat 100%;
+        }
+    }
+    section:last-child {
+      a:active {
+        color: $light-grey;
+        }
+    }
+}
+
+
+
+/* main-navigation */
+.main-nav a{
+  &:hover {
+    background-color: $dark-blue;
+  }
+  &:active {
+  color: $light-grey;
+  }
+}
+
+/// slider 1
+.promo-slider #slide-1:checked ~ .slides .slide:nth-child(1),
+.promo-slider #slide-2:checked ~ .slides .slide:nth-child(2) { 
+  display: block;
+}
+
+
+.promo-slider #slide-1:checked ~ .switch label[for="slide-1"],
+.promo-slider #slide-2:checked ~ .switch label[for="slide-2"] { 
+  background: $red;
+}
+
+////////// slider 2 
+
+#slide-item1:checked ~ .switcher label[for="slide-item1"],
+#slide-item2:checked ~ .switcher label[for="slide-item2"],
+#slide-item3:checked ~ .switcher label[for="slide-item3"] {
+  background-color: $white;
+  color: $light-blue; 
+}
+#slide-item3:checked ~ .switcher label[for="slide-item3"] {
+  box-shadow: none;
+}
+
+#slide-item1:checked ~ .service-slides .slidex:nth-child(1),
+#slide-item2:checked ~ .service-slides .slidex:nth-child(2),
+#slide-item3:checked ~ .service-slides .slidex:nth-child(3) {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/*    FOOTER   */
+
+//hover 
+
+.bottom-nav a:hover,
+.catalog a:hover {
+  text-decoration: underline;
+}
+
+//active 
+
+.bottom-nav a:active,
+.catalog a:active {
+  text-decoration: none;
+  color: rgba($light-grey, 0.5)
+}
+
+// social 
+
+
+.icon-vk:hover,
+.icon-vk:active {
+  background: $malina url(../img/icon-vk.png) no-repeat center;
+}
+.icon-facebook:hover,
+.icon-facebook:active {
+  background: $malina url(../img/icon-facebook.png) no-repeat center;
+}
+.icon-instagramm:hover,
+.icon-instagramm:active {
+  background: $malina url(../img/icon-instagramm.png) no-repeat center;
+}
+
+// contact
+
+.mail-contact a:hover,
+.author a:hover {
+  text-decoration: underline;
+}
+
+.mail-contact a:active,
+.author a:active {
+  text-decoration: none;
+  color: $red;
+}
+
+
+// pagination 
+
+.page {
+  &:hover {
+    border-color: $light-grey;
+  }
+  &:active {
+    border-color: $malina;
+  }
+}
+// goods-card 
+
+.goods-card:hover {
+  box-shadow: 0 10px 25px rgba($dark-dark-blue, 0.5);
+  .product-img {
+    img {
+      display: none;
+    }
+    .hidden {
+      display: flex;
+      flex-direction: column;
+      a:first-child:hover {
+        background-color: $green;
+        &::before {
+          content: url('../img/icon-basket-hover.png');
+        }
+      }
+      a:first-child:active {
+        background-color: $dark-dark-green;
+        border: none;
+      }
+      a:nth-child(2):hover {
+        border: 3px solid $dark-blue;
+      }
+      a:nth-child(2):active {
+        border: 3px solid $grey;
+        color: $grey;
+      }
+    }
+  }
+}
+////////////////////////
+
+.prod-wrap {
+  article:hover {
+    box-shadow: 0 10px 25px rgba($light-grey, 0.5);
+  }
+  article:active {
+    box-shadow: 0 4px 10px rgba($dark-grey, 0.5);
+    img {
+      opacity: 0.5;
+    }
+  }
+}
+
+///////////////////////////////
+
+.promo {
+  .btn:hover {
+    background-color: rgba($black, 0.2);
+  }
+  .btn:active {
+    background-color: rgba($black, 0.3);
+  }
+  .learn-more:hover,
+  .learn-more:active {
+    background-color: $red-hover;
+  }
+}
+
+///////////////////////////
+
+.pop-goods,
+.pop-prod {
+  a:hover,
+  a:active {
+    background-color: $red-hover;
+  }
+}
+
+/// sort-result 
+#by-price + label:hover,
+#by-type + label:hover,
+#by-func + label:hover{
+  color: $black;
+  border-bottom: 1px solid $red;
+}
+
+#by-price:checked + label,
+#by-type:checked + label,
+#by-func:checked + label,
+#by-price:active + label,
+#by-type:active + label,
+#by-func:active + label  {
+  color: $red;
+  border: none;
+}
+
+
+
+#to-low + label:hover,{
+  border-top: 11px solid $black;
+}
+#to-high + label:hover {
+  border-bottom: 11px solid $black;
+}
+#to-low:checked + label {
+  border-top: 11px solid $red;
+}
+#to-high:checked + label {
+  border-bottom: 11px solid $red;
+}
+//////////////////////////////////////
+
+.grid label:hover:before {
+  border: solid 4px $dark-grey;
+}
+#bosch:checked + label:after,
+#interskol:checked + label:after,
+#makita:checked + label:after,
+#dewalt:checked + label:after,
+#hitachi:checked + label:after {
+  position: absolute;
+  content: '';
+  bottom: 5px;
+  left: 10px;
+  width: 13px;
+  height: 23px;
+  border-right: 5px solid $grey;
+  border-bottom: 5px solid $grey;
+  transform: rotate(45deg);
+  box-shadow: 3px 0 0 0 $white, inset -3px 0 0 0 $white;
+}
+#bosch:hover:checked + label:after,
+#interskol:hover:checked + label:after,
+#makita:hover:checked + label:after,
+#dewalt:hover:checked + label:after,
+#hitachi:hover:checked + label:after {
+  border-right: 5px solid $dark-grey;
+  border-bottom: 5px solid $dark-grey;
+}
+
+
+.features label:hover:before {
+  border: solid 2px $dark-grey;
+}
+#battery:checked + label:after,
+#socket:checked + label:after {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: $grey;
+  
+} 
+#battery:hover:checked + label:after,
+#socket:hover:checked + label:after {
+  
+  background-color: $light-grey;
+}
+
+

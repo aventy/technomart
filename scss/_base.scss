@@ -1,0 +1,85 @@
+/*
+  VARIABLES
+*/
+$header: #f1f5f7;
+$black: #000;
+$white: #fff;
+$gold: #f6b22d;
+$sky: #4aafde;
+$violet: #cc79d1;
+$light-green: #5fbb2d;
+$green: #85d179;
+$dark-green: #63a63e;
+$dark-dark-green: #367315;
+$red: #ee3643;
+$red-hover: #cb2834;
+$dark-red: #b52933;
+$light-blue: #32425c;
+$dark-blue: #293449;
+$dark-dark-blue: #161d29;
+$coral: #f7f3ec;
+$grey: #e5e5e5;
+$light-grey: #8b8e94;
+$dark-grey: #999;
+$services-bg: #f3f7f9;
+$malina: #ef3341;
+
+
+$prim-font: Cuprum, Arial, sans-serif;
+
+// custom reset 
+
+html {
+  box-sizing: border-box;
+  font-family: $prim-font;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+}
+
+h3 {
+  font-family: $prim-font;
+  font-size: 1.5em;
+  color: $white;
+  font-weight: 700;
+}
+
+/* buttons */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: $white;
+  font-family: Cuprum;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.28571;
+}
+.btn-135 {
+    width: 135px;
+  }
+.btn-140 {
+  width: 140px;
+}
+.btn-195 {
+  width: 195px;
+}
+.btn-220 {
+  width: 220px;
+}
+.btn-253 {
+  width: 253px;
+}
+.btn-300 {
+  width: 300px;
+}
+
