@@ -993,6 +993,82 @@ main {
   background: url("../img/credit-shadow.png") 100% -7px no-repeat;
 }
 
+.contacts {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.more,
+.map {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.more h2,
+.map h2 {
+  font-size: 1.875em;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.more p,
+.map p {
+  font-size: 0.8125em;
+  line-height: 1.5;
+  font-family: "PT Sans";
+}
+
+.more {
+  width: 520px;
+}
+
+.more ul {
+  font-size: 1.125em;
+  line-height: 1.25;
+  list-style-type: none;
+}
+
+.more ul li {
+  margin: 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.more ul li:before {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: -35px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
+.more a {
+  background-color: #ee3643;
+}
+
+.map p {
+  margin-bottom: 36px;
+}
+
+.map img {
+  margin-bottom: 45px;
+}
+
+.map a {
+  background-color: #ee3643;
+}
+
 .materials, .dely {
   background-color: #f6b22d;
 }
