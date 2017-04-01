@@ -109,15 +109,15 @@
 }
 
 /// slider 1
+.promo-slider #slide-1:checked ~ .slides .slide:nth-child(1),
+.promo-slider #slide-2:checked ~ .slides .slide:nth-child(2) { 
+  display: block;
+}
 
 
 .promo-slider #slide-1:checked ~ .switch label[for="slide-1"],
 .promo-slider #slide-2:checked ~ .switch label[for="slide-2"] { 
   background: $red;
-}
-.promo-slider #slide-1:checked ~ .slides .slide:nth-child(1),
-.promo-slider #slide-2:checked ~ .slides .slide:nth-child(2) { 
-  display: block;
 }
 
 ////////// slider 2 
@@ -224,6 +224,13 @@
       a:first-child:active {
         background-color: $dark-dark-green;
         border: none;
+      }
+      a:nth-child(2):hover {
+        border: 3px solid $dark-blue;
+      }
+      a:nth-child(2):active {
+        border: 3px solid $grey;
+        color: $grey;
       }
     }
   }
